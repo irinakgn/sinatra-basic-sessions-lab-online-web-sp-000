@@ -11,7 +11,8 @@ get '/' do
 end
 
 post '/checkout' do
-  @session[:item] = params[:item]
+  @session["name"] = params[:item]
+    @session = session
 end
 
 
